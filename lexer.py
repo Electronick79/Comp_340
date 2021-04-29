@@ -8,7 +8,7 @@ lis = list()
 
 class lexer:
 
-    def __init__(self, type, value, ls=None):
+    def __init__(self, type, value, lis=None):
         self.type = type
         self.value = value
         lis.append(self)
@@ -16,7 +16,7 @@ class lexer:
 
 class lexer(lexer):
 
-    def tonkenize(srcCode, ls=None):
+    def tonkenize(srcCode, lis=None):
         for scr in srcCode:
             if scr == '(':
                 type = "LPAREN"
